@@ -1,0 +1,22 @@
+<!-- home.html -->
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Accueil
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+        <ion-item>
+            <ion-label stacked>Email</ion-label>
+            <ion-input type="text" [(ngModel)]="user.email"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label stacked>Mot de passe</ion-label>
+            <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+        </ion-item>
+    </ion-list>
+    <button ion-button block (click)="login()">Connexion</button>
+</ion-content>
